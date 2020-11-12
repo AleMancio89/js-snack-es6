@@ -1,7 +1,8 @@
 /*
-Creare un array di oggetti: ogni oggetto descriverà una bici
-da corsa con le seguenti proprietà: nome e peso.
-Stampare a schermo la bici con peso minore.
+jsnack 2 - Updated
+Creare un array di oggetti:
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
 */
 
 let bici = [
@@ -22,9 +23,12 @@ let bici = [
 let bicileggera = bici[0];
 
 for(let i = 0; i < bici.length; i++){
-  if(bici[i].peso < bicileggera.peso){
+  let {peso} = bici[i];
+  if(peso < bicileggera.peso){
     bicileggera = bici[i];
   }
 }
 
-console.log(`La bici più leggera è la ${bicileggera.nome}. Con il peso di: ${bicileggera.peso}`);
+let {nome, peso} = bicileggera;
+
+console.log(`La bici più leggera è la ${nome}. Con il peso di: ${peso}`);
