@@ -7,15 +7,15 @@ Stampare a schermo la bici con peso minore utilizzando destructuring e template 
 
 let bici = [
   {
-    'nome': 'olympia',
+    'nome': 'Olympia',
     'peso': 15
   },
   {
-    'nome': 'cube',
+    'nome': 'Cube',
     'peso': 10
   },
   {
-    'nome': 'scott',
+    'nome': 'Scott',
     'peso': 9
   }
 ];
@@ -23,8 +23,7 @@ let bici = [
 let bicileggera = bici[0];
 
 for(let i = 0; i < bici.length; i++){
-  let {peso} = bici[i];
-  if(peso < bicileggera.peso){
+  if(bici[i].peso < bicileggera.peso){
     bicileggera = bici[i];
   }
 }
