@@ -22,7 +22,7 @@ var arrayObj = [
 function randomLetter() {
   let result = '';
   let characters = 'abcdefghijklmnopqrstuvwxyz';
-  return result += characters.charAt(Math.floor(Math.random() * characters.length));
+  return result = characters.charAt(Math.floor(Math.random() * characters.length));
 }
 
 //Clono nuovo array ed agggiungo nuova chiave position
