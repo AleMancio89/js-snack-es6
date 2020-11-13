@@ -26,7 +26,10 @@ function randomLetter() {
 }
 
 //Clono nuovo array ed agggiungo nuova chiave position
-const newArrayObj = arrayObj.map((element) => ({...element, position: randomLetter()}));
+const newArrayObj = arrayObj.map((element) => {
+  let newElement = {...element, position: randomLetter()};
+  return newElement
+})
 
 console.log(arrayObj);
 console.log(newArrayObj);

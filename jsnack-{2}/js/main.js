@@ -12,11 +12,11 @@ let bici = [
   },
   {
     'nome': 'Cube',
-    'peso': 10
+    'peso': 9
   },
   {
     'nome': 'Scott',
-    'peso': 9
+    'peso': 10
   }
 ];
 
