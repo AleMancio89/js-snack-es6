@@ -22,6 +22,13 @@ let bici = [
 
 let bicileggera = bici[0];
 
+//Fattibile anche con un forEach
+// bici.forEach((element) => {
+//   if(element.peso  < bicileggera.peso){
+//     bicileggera = element
+//   }
+// })
+
 for(let i = 0; i < bici.length; i++){
   if(bici[i].peso < bicileggera.peso){
     bicileggera = bici[i];
@@ -29,5 +36,10 @@ for(let i = 0; i < bici.length; i++){
 }
 
 let {nome, peso} = bicileggera;
+
+document.getElementById('bici').innerHTML = `
+ <li>Nome: ${nome}</li>
+ <li>Peso: ${peso}</li>
+`;
 
 console.log(`La bici più leggera è la ${nome}. Con il peso di: ${peso}`);
